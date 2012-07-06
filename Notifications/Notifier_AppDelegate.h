@@ -10,6 +10,4 @@
 
 @interface Notifier_AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
-
 @end
