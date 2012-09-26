@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8C670FD15F649690000CF79 /* notifications.icns in Resources */ = {isa = PBXBuildFile; fileRef = E8C670FC15F649690000CF79 /* notifications.icns */; };
 		E8DE5F5815A7577D00C3E7E9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8DE5F5715A7577D00C3E7E9 /* Cocoa.framework */; };
 		E8DE5F6215A7577D00C3E7E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E8DE5F6015A7577D00C3E7E9 /* InfoPlist.strings */; };
 		E8DE5F6415A7577D00C3E7E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DE5F6315A7577D00C3E7E9 /* main.m */; };
 		E8DE5F6B15A7577E00C3E7E9 /* Notifier_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DE5F6A15A7577E00C3E7E9 /* Notifier_AppDelegate.m */; };
 		E8DE5F7715A7586E00C3E7E9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DE5F7515A7586E00C3E7E9 /* MainMenu.xib */; };
-		E8DE5F7915A75B3800C3E7E9 /* notifications.icns in Resources */ = {isa = PBXBuildFile; fileRef = E8DE5F7815A75B3800C3E7E9 /* notifications.icns */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E88EDF0715A79B19001DF3FB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E8C670FC15F649690000CF79 /* notifications.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = notifications.icns; sourceTree = "<group>"; };
 		E8DE5F5315A7577D00C3E7E9 /* NotificationsAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationsAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DE5F5715A7577D00C3E7E9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E8DE5F5A15A7577D00C3E7E9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,7 +42,6 @@
 		E8DE5F6A15A7577E00C3E7E9 /* Notifier_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Notifier_AppDelegate.m; sourceTree = "<group>"; };
 		E8DE5F7415A757A100C3E7E9 /* Notifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Notifications.entitlements; sourceTree = "<group>"; };
 		E8DE5F7615A7586E00C3E7E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Notifications/en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		E8DE5F7815A75B3800C3E7E9 /* notifications.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = notifications.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +99,7 @@
 				E8DE5F6915A7577E00C3E7E9 /* Notifier_AppDelegate.h */,
 				E8DE5F6A15A7577E00C3E7E9 /* Notifier_AppDelegate.m */,
 				E8DE5F7515A7586E00C3E7E9 /* MainMenu.xib */,
-				E8DE5F7815A75B3800C3E7E9 /* notifications.icns */,
+				E8C670FC15F649690000CF79 /* notifications.icns */,
 				E8DE5F5E15A7577D00C3E7E9 /* Supporting Files */,
 			);
 			path = Notifications;
@@ -113,6 +125,7 @@
 			buildPhases = (
 				E8DE5F4F15A7577D00C3E7E9 /* Sources */,
 				E8DE5F5015A7577D00C3E7E9 /* Frameworks */,
+				E88EDF0715A79B19001DF3FB /* CopyFiles */,
 				E8DE5F5115A7577D00C3E7E9 /* Resources */,
 			);
 			buildRules = (
@@ -158,7 +171,7 @@
 			files = (
 				E8DE5F6215A7577D00C3E7E9 /* InfoPlist.strings in Resources */,
 				E8DE5F7715A7586E00C3E7E9 /* MainMenu.xib in Resources */,
-				E8DE5F7915A75B3800C3E7E9 /* notifications.icns in Resources */,
+				E8C670FD15F649690000CF79 /* notifications.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +265,10 @@
 				CODE_SIGN_ENTITLEMENTS = Notifications/Notifications.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Notifications/NotificationsAgent-Prefix.pch";
 				INFOPLIST_FILE = "Notifications/NotificationsAgent-Info.plist";
@@ -266,6 +283,10 @@
 				CODE_SIGN_ENTITLEMENTS = Notifications/Notifications.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Notifications/NotificationsAgent-Prefix.pch";
 				INFOPLIST_FILE = "Notifications/NotificationsAgent-Info.plist";
@@ -293,6 +314,7 @@
 				E8DE5F7315A7577E00C3E7E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

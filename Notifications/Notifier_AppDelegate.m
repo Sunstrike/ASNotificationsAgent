@@ -28,7 +28,7 @@
             [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
         } else {
             printf("No information provided OR using wrong format\n\n");
-            printf("USAGE: %s  -title \"TITLE\" -info \"INFO TEXT\" [-subtitle \"SUBTITLE\"\n\n", [[[NSProcessInfo new] processName] UTF8String]);
+            printf("USAGE: %s  -title \"TITLE\" [-info \"INFO TEXT\" -subtitle \"SUBTITLE\"]\n\n", [[[NSProcessInfo new] processName] UTF8String]);
         }
     }
     
